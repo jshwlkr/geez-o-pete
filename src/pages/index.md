@@ -1,5 +1,5 @@
 ---
-title: Geez O' Pete
+title: Jeez O' Pete
 subtitle: A curated repository of Michigan recipes
 permalink: "/"
 layout: page
