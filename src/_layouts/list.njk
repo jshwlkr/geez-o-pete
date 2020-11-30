@@ -22,7 +22,17 @@
 		{% endif %}
 		</ul>
 
-		{{ content | safe }}
+
+
+<ol reversed style="counter-reset: start-from {{ collections.posts.length + 1 }}">
+{% for post in collections.posts | reverse %}
+  <li>
+    <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+    <time datetime="{{ post.date }}">— {{ post.date.toDateString() }}</time>
+  </li>
+{% endfor %}
+</ol>
+
 
 		</article>
 		{% include "footer.njk" %}

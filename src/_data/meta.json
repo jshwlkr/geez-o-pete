@@ -1,16 +1,11 @@
 {
-  "title" : "Eleventufte",
-  "subtitle": "An Edward Tufte flavored blogging template for Eleventy",
-  "url": "https://eleventufte.netlify.app",
+  "title" : "Geez O' Pete",
+  "subtitle": "A curated repository of notable cultural or historical Michigan recipes.",
+  "url": "",
   "feedUrl": "/feed.xml",
   "lang": "en",
   "author": {
-    "name": "Jeff Eaton",
-    "email": "jeff@eaton.fyi"
-  },
-  "social": {
-    "twitter": "http://twitter.com/eaton",
-    "github": "https://github.com/nerdhaus/eleventufte",
-    "linkedin": "https://linkedin.com/in/jeffeaton"
+    "name": "Joshua walker",
+    "email": "email.me@jshwlkr.info"
   }
 }

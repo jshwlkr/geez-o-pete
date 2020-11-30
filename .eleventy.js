@@ -15,10 +15,17 @@ module.exports = function (eleventyConfig) {
 		// Asset Watch Targets
 		eleventyConfig.addWatchTarget('./src/assets')
 
-		/* Markdown Configuration */
-		let options = {
-		    react: false,
-    };
+
+
+	const slugify = require("slugify");
+	eleventyConfig.addFilter("slug", (input) => {
+	  const options = {
+		replacement: "-",
+		remove: /[&,+()$~%.'":*?<>{}]/g,
+		lower: true
+	  };
+	  return slugify(input, options);
+	});
 
 		// Markdown
 		eleventyConfig.setLibrary("md", tufteWrapper)
@@ -29,6 +36,7 @@ module.exports = function (eleventyConfig) {
 		eleventyConfig.addLayoutAlias('base',			'base.njk')
 		eleventyConfig.addLayoutAlias('simple',		'base.njk')
 		eleventyConfig.addLayoutAlias('post',		  'base.njk')
+		eleventyConfig.addLayoutAlias('page',		  'page.njk')
 
 		// Pass-through files
 		eleventyConfig.addPassthroughCopy('src/admin')
