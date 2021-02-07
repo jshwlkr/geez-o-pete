@@ -13,7 +13,7 @@
     "eleventy:dev": "cross-env ELEVENTY_ENV=development eleventy --serve",
     "eleventy:prod": "cross-env ELEVENTY_ENV=production eleventy",
     "cms": "netlify-cms-proxy-server",
-    "clean": "del-cli dist",
+    "clean": "del-cli docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
